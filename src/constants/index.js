@@ -52,7 +52,7 @@ export const clientReviews = [
         position: 'Back-end Developer at Adamjee Model School',
         img: 'https://res.cloudinary.com/dvbc6ctqu/image/upload/v1732917430/review4_gnghet.jpg',
         review:
-            'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+            'Nisar Noorani was an exceptional HTML/CSS instructor at Adamjee School. His teaching style was engaging, clear, and thorough, ensuring that students not only grasped the fundamentals of web development but also gained confidence in applying their skills. Nisar’s passion for the subject and his ability to make complex topics accessible helped foster a positive learning environment.',
     },
 ];
 
