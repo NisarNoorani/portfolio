@@ -10,5 +10,136 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
+    <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "591a84dc-257e-480c-96e7-559fc1fad34d",
+        apiHost: "https://hl4kdo1i.rpcld.app",
+        chatflowConfig: {
+            /* Chatflow Config */
+        },
+        observersConfig: {
+            /* Observers Config */
+        },
+        theme: {
+            button: {
+                backgroundColor: '#3A3A49',  /* Dark gray button */
+                right: 20,
+                bottom: 20,
+                size: 48,
+                dragAndDrop: true,
+                iconColor: 'white',
+                customIconSrc: 'https://res.cloudinary.com/dvbc6ctqu/image/upload/v1732918159/sara_tnh4hv.jpg',
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 2,
+                    autoOpenOnMobile: false
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Hey there! Let’s explore Nisar’s amazing work?',
+                tooltipBackgroundColor: '#333',  /* Dark background */
+                tooltipTextColor: 'white',
+                tooltipFontSize: 16
+            },
+            disclaimer: {
+                title: 'Disclaimer',
+                message: "By using this chatbot, you agree to the <a>Terms & Condition</a>",
+                textColor: '#FFFFFF',  /* White text */
+                buttonColor: '#4CAF50',  /* Green button */
+                buttonText: 'Start Chatting',
+                buttonTextColor: 'white',
+                blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
+                backgroundColor: '#1A1A1A'  /* Dark background */
+            },
+            customCSS: `
+                /* Custom Dark Theme */
+                body {
+                    background-color: #121212;  /* Dark background */
+                    color: #E4E4E6;  /* Light gray text */
+                }
+                .chat-window {
+                    background-color: #1C1C21;  /* Dark gray chat window */
+                    color: #E4E4E6;  /* Light gray text */
+                }
+                .error-message {
+                    background-color: #3A3A49;  /* Dark gray for errors */
+                    color: #FFFFFF;  /* White text for errors */
+                }
+                .chat-window .header {
+                    background-image: url('https://res.cloudinary.com/dvbc6ctqu/image/upload/v1732918159/sara_tnh4hv.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    border-radius: 50%;
+                }
+            `,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'Sara - The AI Manager',
+                titleAvatarSrc: 'https://res.cloudinary.com/dvbc6ctqu/image/upload/v1732918159/sara_tnh4hv.jpg',
+                welcomeMessage: 'Sara here! Type your question below and I’ll help you out.',
+                errorMessage: 'Oops! Looks like I’ve lost my digital way... 😅 Don’t worry, I’ll be back on track! Meanwhile, you can email Nisar at nisarcraft116@gmail.com for help!',
+                backgroundColor: '#1C1C21',  /* Dark background */
+                backgroundImage: '',
+                height: 700,
+                width: 400,
+                fontSize: 16,
+                starterPrompts: [
+                    "What’s unique about Nisar's projects?",
+                    "How can Nisar help bring your idea to life?",
+                    "What technologies does Nisar use?"
+                ],
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Sources:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: '#333',  /* Dark gray for bot messages */
+                    textColor: '#E4E4E6',  /* Light gray text for bot */
+                    showAvatar: true,
+                    avatarSrc: 'https://res.cloudinary.com/dvbc6ctqu/image/upload/v1732918159/sara_tnh4hv.jpg'
+                },
+                userMessage: {
+                    backgroundColor: '#4CAF50',  /* Green for user messages */
+                    textColor: '#ffffff',  /* White text for user */
+                    showAvatar: true,
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
+                },
+                textInput: {
+                    placeholder: 'Type your question',
+                    backgroundColor: '#333',  /* Dark background for text input */
+                    textColor: '#E4E4E6',  /* Light gray text */
+                    sendButtonColor: '#4CAF50',  /* Green send button */
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: {
+                    color: '#E4E4E6'  /* Light gray feedback text */
+                },
+                dateTimeToggle: {
+                    date: true,
+                    time: true
+                },
+                footer: {
+                    textColor: '#E4E4E6',  /* Light gray footer text */
+                    text: 'Powered by',
+                    company: 'Nisar Noorani',
+                    companyLink: ''
+                }
+            }
+        }
+    })
+          </script>
+    
   </body>
 </html>
