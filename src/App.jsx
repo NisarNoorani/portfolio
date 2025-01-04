@@ -6,13 +6,11 @@ import Clients from "./sections/Clients.jsx";
 import Contact from "./sections/Contact.jsx";
 import Footer from "./sections/Footer.jsx";
 import Experience from "./sections/Experience.jsx";
-import LenisScroll from "./components/LenisScroll.jsx";
 
 
 
 const App = () => {
     return (
-        <LenisScroll>
             <main className="max-w-7xl mx-auto">
                 <Navbar />
                 <Hero />
@@ -23,7 +21,6 @@ const App = () => {
                 <Contact/>
                 <Footer />
             </main>
-        </LenisScroll>
     )
 }
 export default App
